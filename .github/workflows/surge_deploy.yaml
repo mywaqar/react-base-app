@@ -23,7 +23,7 @@ jobs:
          node-version: 12
    # - name: Prepare Yarn for Installation
    #   run:  curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add - echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-    - name: install yarn
+    - name: action for yarn
    #   run:  sudo apt update && sudo apt install yarn
       uses: borales/actions-yarn@v2.0.0
       with:
@@ -33,6 +33,6 @@ jobs:
     - name: install surge
       run:  npm install -g surge
     - name: run surge
-      run:  surge ./build bootcamp_react_waqar.surge.sh --token ${{secrets.WAQAR_SURGE}} 
+      run:  surge ./build bootcamp_react_waqar.surge.sh --token ${{secrets.SURGE_REACT}} 
   
 
