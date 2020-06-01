@@ -33,6 +33,6 @@ jobs:
     - name: install surge
       run:  npm install -g surge
     - name: run surge
-      run:  surge ./build bootcamp_react_waqar.surge.sh --token $ {{secrets.SURGE_WAQAR}} 
+      run:  surge ./build bootcamp_react_waqar.surge.sh --token ${{secrets.WAQAR_SURGE}} 
   
 
